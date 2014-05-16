@@ -19,15 +19,19 @@
 - (id)init{
     if (self = [super init]) {
         _app = [self createDemoApp];
-        //[self.view addSubview:_app.view];
     }
     return self;
 }
 -(INKViewController*)createDemoApp{
-    return [[INKViewController alloc] init];
+    INKViewController* app = [[INKViewController alloc] init];
+    //Readjust the navigation items
+    //Move the app's 'setting' button to the right
+    app.navigationItem.rightBarButtonItem = app.navigationItem.leftBarButtonItem;
+    app.navigationItem.leftBarButtonItem = nil;
+    
+    return app;
 }
-#pragma mark -
-#pragma mark DemmoApp Delegate
+#pragma mark - DemmoApp Delegate
 -(NSString*)appName{
     return @"IntentKit";
 }
@@ -37,13 +41,7 @@
 -(UIImage*)appImage{
     return [UIImage imageNamed:@"IntentScreenShot.png"];
 }
--(BOOL)launchAppFromViewController:(UIViewController *)viewController{
-    NSLog(@"Launching IntentKit");
-    _homeVC = viewController;
-    [_homeVC.view addSubview:_app.view];
-    return YES;
-}
--(void)closeApp{
-    [_app.view removeFromSuperview];
+-(UIViewController*)mainViewController{
+    return _app;
 }
 @end
