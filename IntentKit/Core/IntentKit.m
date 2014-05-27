@@ -50,8 +50,9 @@
 }
 
 - (UIImage *)imageNamed:(NSString *)name {
-    //TODO
-    
+    //EmmaTech: TODO
+    //Had to remove the bunlde retrival as it did not carry over from the .git submodule
+    /*
     NSURL *bundleURL = [[NSBundle mainBundle] URLForResource:@"IntentKit" withExtension:@"bundle"];
     NSBundle *bundle;
     if (bundleURL) {
@@ -59,7 +60,7 @@
     }
     NSString *filename = [bundle pathForResource:name ofType:@"png"];
     return [UIImage imageWithContentsOfFile:filename];
-    
+    */
     NSString* imgName = [NSString stringWithFormat:@"%@.png",name];
     return [UIImage imageNamed:imgName];
 }
