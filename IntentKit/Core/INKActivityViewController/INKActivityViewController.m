@@ -13,7 +13,7 @@
 #import "INKDefaultToggleView.h"
 #import "INKLocalizedString.h"
 
-#import <MWLayoutHelpers/UIView+MWLayoutHelpers.h>
+#import "UIView+MWLayoutHelpers.h"
 
 static NSString * const CellIdentifier = @"UIActivityCell";
 

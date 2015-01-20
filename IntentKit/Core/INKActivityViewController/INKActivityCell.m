@@ -10,7 +10,7 @@
 #import "IntentKit.h"
 #import "INKAppIconView.h"
 
-#import <MWLayoutHelpers/UIView+MWLayoutHelpers.h>
+#import "UIView+MWLayoutHelpers.h"
 
 @interface INKActivityCell ()
 @property (strong, nonatomic) INKAppIconView *iconView;

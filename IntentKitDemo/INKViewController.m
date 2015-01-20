@@ -18,7 +18,7 @@
 #import "INKFacebookHandler.h"
 #import "INKGPlusHandler.h"
 
-#import <UIView+MWLayoutHelpers.h>
+#import "UIView+MWLayoutHelpers.h"
 
 @interface INKViewController ()
 

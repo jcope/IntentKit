@@ -9,7 +9,7 @@
 #import "INKActivityPresenter.h"
 #import "INKActivityViewController.h"
 #import "IntentKit.h"
-#import <MWLayoutHelpers/UIView+MWLayoutHelpers.h>
+#import "UIView+MWLayoutHelpers.h"
 
 @interface INKActivityPresenter ()
 
